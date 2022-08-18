@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Age Calculator</title>
+</head>
+
+<body>
+
+  <section class="bg-slate-100 min-h-screen flex justify-center items-center">
+
+    <div class="bg-white p-10">
+
+      <h1 class="font-bold text-xl">Age Calculator in Days</h1>
+
+      <form class="grid sm:grid-cols-2 items-center mt-10 gap-x-5">
+
+        <label for="birth">Select your birth date</label>
+        <input class="bg-slate-100 px-3 py-2" type="date" name="birth" id="birth" required>
+        <button class="bg-black text-white mt-10 px-3 py-2 col-span-2" id="submit">Calculate</button>
+
+      </form>
+
+      <p class="hidden mt-10 bg-slate-100 text-center py-2" id="result"></p>
+
+    </div>
+
+  </section>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
